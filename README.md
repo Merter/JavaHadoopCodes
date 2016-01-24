@@ -1,2 +1,2 @@
-# JavaProjects
-Codes that solves problems in Java
+# JavaHadoopCodes
+Codes that solves problems in Java with Hadoop
