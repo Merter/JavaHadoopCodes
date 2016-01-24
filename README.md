@@ -1,2 +1,2 @@
 # JavaHadoopCodes
-Codes that solves problems in Java with Hadoop
+Codes that solve problems in Java with Hadoop
