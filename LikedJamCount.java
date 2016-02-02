@@ -6,6 +6,7 @@ import java.io.*;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -16,11 +17,11 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class LikedJamCount {
 
   public static class TokenizerMapper
-      extends Mapper<Object, Text, Text, IntWritable>{
+      extends Mapper<LongWritable, Text, Text, IntWritable>{
 
       private final static IntWritable one = new IntWritable(1);
 
-      public void map(Object key, Text value, Context context
+      public void map(LongWritable key, Text value, Context context
           ) throws IOException, InterruptedException {
         String[] userAndJam = value.toString().split("\t");
         context.write(new Text(userAndJam[1]), one);
