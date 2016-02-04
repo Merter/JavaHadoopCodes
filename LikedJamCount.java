@@ -1,4 +1,10 @@
 
+/*
+ *	Modified code
+ *  The source is: http://bit.ly/1m9xHym
+ *
+ */
+
 package tr.name.sualp.merter.hadoop.myjam;
 
 import java.util.*;
@@ -42,7 +48,6 @@ public class LikedJamCount {
         result.set(sum);
         context.write(key, result);
           }
-
   }
 
   public static void main(String[] args) throws Exception {

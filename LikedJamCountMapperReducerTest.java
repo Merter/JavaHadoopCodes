@@ -1,4 +1,10 @@
 
+/*
+ *	Modified code
+ *  The source is: http://bit.ly/1yKQkYs
+ *
+ */
+
 package tr.name.sualp.merter.hadoop.myjam;
 
 import java.util.ArrayList;

@@ -1,4 +1,10 @@
 
+/*
+ *	Modified code
+ *  The source is in Haddop - The Definitive Guide book
+ *
+ */
+
 package tr.name.sualp.merter.hadoop.myjam;
 
 import java.util.*;
